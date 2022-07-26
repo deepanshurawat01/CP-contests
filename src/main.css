@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: "Montserrat" , sans-serif;
+}
+
+.back{
+    padding-top: 2rem;
+    min-height: 721px;
+    height: 100%;
+    width: 100%;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+.container{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 1280px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+    position: absolute;
+    color: white;
+}
+
+.head{
+    background-color: black;
+    color: #ffffff;
+}
+
+thead , tr{
+    text-align: left;
+    font-weight: bold;
+}
+
+th , td {
+  padding: 12px 15px;
+}
+
+.rows tr:hover {
+    background-color:#ddd;
+}
+
+tbody{
+    background-color: white;
+}
+
+.site_name {
+    color:	rgb(48,48,48);
+    font-size: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance:none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 12px;
+    border: 0;
+    outline:0;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown{
+    margin-left: 38rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown {
+    width: 16em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+
+.Load {
+    font-size: 20px;
+    margin-top: 5rem;
+    color: white;
+}
+
+.col1{
+     column-width: 200px;
+}
+
+.btn-view {
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	background:white;
+	padding: 13px;
+    width: 20%;
+    margin-left: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	border: none;
+}
+
+.search-bar{
+    width:40%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    font-family: "Montserrat" , sans-serif;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+.search-bar:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+@media (max-width: 1395px){
+    .whole{
+        min-width: 600px;
+    }
+
+    .dropdown{
+        margin-right: 200px;
+    }
+
+    .btn-view{
+        width: 100%;
+        margin-left: 200px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1025px){
+    select{
+        display : none;
+    }
+
+    .btn-view{
+        display: none;
+        font-size: 0.65rem;
+        position: relative;
+        right: 350px;
+    }
+
+    .whole{
+        display: block;
+        font-size: 0.8rem;
+        min-width: 600px;
+    }
+
+
+    h1{
+        margin-right: -30px;
+    }
+
+    .search-bar{
+        margin-right: -30px;
+    }
+}
+
+@media (max-width: 500px){
+    table thead{
+        display: none;
+    }
+
+    .whole{
+        display: block;
+        width: 100%;
+        min-width: 100px;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        display: block;
+        font-size: .8em;
+        text-align: center;
+    }
+
+    h1{
+        margin-right: 0px;
+    }
+
+    .search-bar{
+        margin-right: 0px;
+    }
+}
+
+  
